@@ -1,0 +1,19 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: GitHub Action for Sanity.ioGitHub Action for Sanity.io
+    - name: sanity-io/github-action-sanity@v0.1-alpha
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      
+       
+  
+        echo Add other actions to build,
+        echo test, and deploy your project.
