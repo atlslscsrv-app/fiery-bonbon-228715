@@ -17,3 +17,28 @@ jobs:
   
         echo Add other actions to build,
         echo test, and deploy your project.
+        
+        "License validation flow" {fiery-bonbon-228715%2Fgithub.io%2Fworkflow52fmain.yml}
+  on = "pull_request";
+  resolves = ["validate license"]
+}
+
+action "validate license" {
+  uses = "datreeio/validate-license-action@master"
+  args = ["MIT,ISC"]
+  - name: Setup Node.js for use with actions
+  uses: actions/setup-node@v1.1.0- name: Download artifact
+  uses: actions/download-artifact@v1.0.0
+  with:
+    # Artifact name
+    name: 
+    # Destination path
+    path: # optional
+  with:
+    # Version Spec of the version to use.  Examples: 10.x, 10.15.1, >=10.15.0, lts
+    version: # optional, default is 10.x
+    # Optional registry to set up for auth. Will set the registry in a project level .npmrc and .yarnrc file, and set up auth to read in from env.NODE_AUTH_TOKEN
+    registry-url: # optional
+    # Optional scope for authenticating against scoped registries
+    scope: # optional
+}rapidView=projectKey=LAO&view=planning.nodetail&issueLimit=1&search=fiery-bonbon-228715%2Fgithub.io%2Fworkflow%2Fmain.yml") https://www.atlastsecurityservicesonmicrosoft.atlassian.net/secure/atlslscsrv.app@atlsecsrv.org.
