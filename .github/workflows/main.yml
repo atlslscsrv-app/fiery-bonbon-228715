@@ -13,17 +13,27 @@ jobs:
       run: echo Hello, world!
     - name: Run a multi-line script
       
+     - name: Setup .NET Core SDK
+  uses: actions/setup-dotnet@v1.4.0
+  with:
+    # SDK version to use. Example: 2.2.104
+    dotnet-version: # optional
+    # Optional package source for which to set up authentication. Will consult any existing NuGet.config in the root of the repo and provide a temporary NuGet.config using the NUGET_AUTH_TOKEN environment variable as a ClearTextPassword
+    source-url: # optional
+    # Optional OWNER for using packages from GitHub Package Registry organizations/users other than the current repository's owner. Only used if a GPR URL is also provided in source-url
+    owner: # optional
+    # Optional NuGet.config location, if your NuGet.config isn't located in the root of the repo.
+    config-file: # optional
+    # Deprecated. Use dotnet-version instead. Will not be supported after October 1, 2019
+    version: # optional 
        
   
         echo Add other actions to build,
         echo test, and deploy your project.
-        
-        "License validation flow" {fiery-bonbon-228715%2Fgithub.io%2Fworkflow52fmain.yml}
-  on = "pull_request";
-  resolves = ["validate license"]
-}
+        name:fiery-bonbon-228715;
+  on: "pull request;"
 
-action "validate license" {
+action "validate license" }
   uses = "datreeio/validate-license-action@master"
   args = ["MIT,ISC"]
   - name: Setup Node.js for use with actions
@@ -39,6 +49,7 @@ action "validate license" {
     version: # optional, default is 10.x
     # Optional registry to set up for auth. Will set the registry in a project level .npmrc and .yarnrc file, and set up auth to read in from env.NODE_AUTH_TOKEN
     registry-url: # optional
-    # Optional scope for authenticating against scoped registries
+    # Optional scope for authenticating against scoped registries 
     scope: # optional
 }rapidView=projectKey=LAO&view=planning.nodetail&issueLimit=1&search=fiery-bonbon-228715%2Fgithub.io%2Fworkflow%2Fmain.yml") https://www.atlastsecurityservicesonmicrosoft.atlassian.net/secure/atlslscsrv.app@atlsecsrv.org.
+ 
