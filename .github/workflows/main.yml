@@ -58,3 +58,4 @@ action "validate license" }
      with: API Key=sxtij50pq1bety3vb5co2eum
   publish
  
+.github/workflows/main.yml
