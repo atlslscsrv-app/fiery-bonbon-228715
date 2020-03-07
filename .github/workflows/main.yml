@@ -13,9 +13,47 @@ jobs:
       run: echo Hello, world!
     - name: Run a multi-line script
       
+      uses: 
+      - name:  Trigger GitLab CI
+  uses: appleboy/gitlab-ci-action@0.0.1
+  job_id:
+    "[fiery-bonbon-228715].github/workflows/main.yml" 
+  -on : [push]
+       [fiery-bonbon-228715].github/workflows/main.yml" 
+    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: ['8', '10', '12']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node_version }}
+
+    - name: npm install, build and test
+      run: |
+        npm install
+        npm run build --if-present
+        npm test
+        branches:
+           -master 
+              -release/*
+         
+          
+   
+           
+             on:
+             shedual:
+             -cron: "0.2** 1-5"
+      
      - name: Setup .NET Core SDK
   uses: actions/setup-dotnet@v1.4.0
-  with:
+  with: - name: Get LATEST
+  uses: blacktop/get-latest-version-action@v2
     # SDK version to use. Example: 2.2.104
     dotnet-version: # optional
     # Optional package source for which to set up authentication. Will consult any existing NuGet.config in the root of the repo and provide a temporary NuGet.config using the NUGET_AUTH_TOKEN environment variable as a ClearTextPassword
@@ -53,4 +91,5 @@ action "validate license" }
     scope: # optional
 }rapidView=projectKey=LAO&view=planning.nodetail&issueLimit=1&search=fiery-bonbon-228715%2Fgithub.io%2Fworkflow%2Fmain.yml") https://www.atlastsecurityservicesonmicrosoft.atlassian.net/secure/atlslscsrv.app@atlsecsrv.org.
  
-.github/workflows/main.yml
+- name: Trigger GitLab CI
+  uses: appleboy/gitlab-ci-action@0.0.1"shared_office365users"
