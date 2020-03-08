@@ -18,10 +18,9 @@ jobs:
   uses: appleboy/gitlab-ci-action@0.0.1
   job_id:
     "[fiery-bonbon-228715].github/workflows/main.yml" 
-  -on : [push]
-       [fiery-bonbon-228715].github/workflows/main.yml" 
-    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
+  steps:
+    -name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    -runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         node_version: ['8', '10', '12']
