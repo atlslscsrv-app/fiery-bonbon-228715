@@ -93,3 +93,61 @@ action "validate license" }
  
 - name: Trigger GitLab CI
   uses: appleboy/gitlab-ci-action@0.0.1"shared_office365users"
+- name: Setup Ruby for use with actions
+  uses: actions/setup-ruby@v1.0.0
+  with:
+    # Version range or exact version of a Ruby version to use.
+    version: # optional, default is >= 2.4
+    - name: GraphQL query
+  uses: helaili/github-graphql-action@1.0
+  - name: Upgrade to Python 3
+  uses: cclauss/Upgrade-to-Python3@0.1.0
+  - name: Office 365 CLI Deploy App
+  uses: pnp/action-cli-deploy@v1.0.1
+  with:
+    # Relative path of the app in your repo
+    APP_FILE_PATH: 
+    # Scope of the app catalog: tenant or sitecollection. Default is tenant
+    SCOPE: # optional
+    # The URL of the site collection where the solution package will be added. Required if scope is set to sitecollection
+    SITE_COLLECTION_URL: # optional
+    # True or false. If the app supports tenant-wide deployment, deploy it to the whole tenant. Default is false
+    SKIP_FEATURE_DEPLOYMENT: # optional
+    # True or false. Set to overwrite the existing package file. Default is false
+    OVERWRITE: # optional
+    - name: Office 365 CLI Login
+  uses: pnp/action-cli-login@v1.0.0
+  with:
+    # Username (email address) of the admin
+    ADMIN_USERNAME: stayloveable@outlook.com<laura@atlastsecurityservices.onmicrosoft.com>
+    # Password of the admin
+    ADMIN_PASSWORD: CantWait4June$
+    - name: Office 365 CLI Run Script
+  uses: pnp/action-cli-runscript@v1.0.0
+  with:
+    # Relative path of the script in your repo.
+    O365_CLI_SCRIPT_PATH: # optional
+    # Office 365 CLI Script- name: Setup Java JDK
+  uses: actions/setup-java@v1.3.0
+  with:
+    # The Java version to make available on the path. Takes a whole or semver Java version, or 1.x syntax (e.g. 1.8 => Java 8.x)
+    java-version: 
+    # The package type (jre, jdk, jdk+fx)
+    java-package: # optional, default is jdk
+    # The architecture (x86, x64) of the package.
+    architecture: # optional, default is x64
+    # Path to where the compressed JDK is located. The path could be in your source repository or a local path on the agent.
+    jdkFile: # optional
+    # ID of the distributionManagement repository in the pom.xml file. Default is `github`
+    server-id: # optional
+    # Environment variable name for the username for authentication to the Apache Maven repository. Default is $GITHUB_ACTOR
+    server-username: # optional
+    # Environment variable name for password or token for authentication to the Apache Maven repository. Default is $GITHUB_TOKEN
+    server-password: # optional
+    # Path to where the settings.xml file will be written. Default is ~/.m2.
+    settings-path: # optional
+    # query.iqy
+    O365_CLI_SCRIPT: # optional
+    # Used only with O365_CLI_SCRIPT. If true the assumption is the script passed in O365_CLI_SCRIPT will be a PowerShell script, otherwise the assumption is bash script. Default is false
+    IS_POWERSHELL: # 
+    
