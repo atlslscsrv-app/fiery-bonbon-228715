@@ -2,11 +2,13 @@ name: CI
 
 on: [push]
 
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
+jobs:run: Microsoft.HostGroups-20200408142250
+with:
+  build: VM-228715-DG
+     runs-on: ubuntu-latest
+    push:Microsoft.Compute/hostgroups
+      with:https://aka.ms/RDSetup
+       
     steps:
     - uses: GitHub Action for Sanity.ioGitHub Action for Sanity.io
     - name: sanity-io/github-action-sanity@v0.1-alpha
@@ -41,16 +43,18 @@ action "validate license" }
   uses: actions/setup-node@v1.1.0- name: Download artifact
   uses: actions/download-artifact@v1.0.0
   with:
-    # Artifact name
-    name: 
+    # cloudshellstorageeast210
+    name: Azure-Portal-Plines-Luv-App-Landing-page-fiery-bonbon-228725
     # Destination path
-    path: # optional
-  with:
+    path: luckyluv77@Azure: file location(home/luckyluv77/.ssh/id-rsa)
+  with: qoctocat-spinner-128
     # Version Spec of the version to use.  Examples: 10.x, 10.15.1, >=10.15.0, lts
     version: # optional, default is 10.x
     # Optional registry to set up for auth. Will set the registry in a project level .npmrc and .yarnrc file, and set up auth to read in from env.NODE_AUTH_TOKEN
-    registry-url: # optional
+    registry-url: https://luckyluv.github.io/security-alerts-atlast-sec-srv-lauras-secure-web-browser/
     # Optional scope for authenticating against scoped registries 
-    scope: # optional
-}rapidView=projectKey=LAO&view=planning.nodetail&issueLimit=1&search=fiery-bonbon-228715%2Fgithub.io%2Fworkflow%2Fmain.yml") https://www.atlastsecurityservicesonmicrosoft.atlassian.net/secure/atlslscsrv.app@atlsecsrv.org.
+    scope: # "https://dev.azure.com/ATLastSecSrv.onmicrosoft.com/atlsecsrv.org"(account.activedirectory.windowsazure.com)
+     publish coustom feed: https:ci.appveyor.com/nuget/fiery-bonbon-228715-laura-s-se-othsky11dtho 
+     with: API Key=sxtij50pq1bety3vb5co2eum
+  publish
  
