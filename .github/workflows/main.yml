@@ -8,7 +8,7 @@ with:
      runs-on: ubuntu-latest
     push:Microsoft.Compute/hostgroups
       with:https://aka.ms/RDSetup
-       
+    - acquisition id: 4f3c058a'5e3c-49a5-9a35-6fd06ee9f24a 
     steps:
     - uses: GitHub Action for Sanity.ioGitHub Action for Sanity.io
     - name: sanity-io/github-action-sanity@v0.1-alpha
