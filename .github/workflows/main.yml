@@ -1,4 +1,4 @@
-name: CI
+name: CI lauras-secure-web-browser-atlsecsrv-org
 
 on: [push]
 
