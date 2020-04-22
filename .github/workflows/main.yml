@@ -1,12 +1,14 @@
-name: CI
+name: CI lauras-secure-web-browser-atlsecsrv-org
 
 on: [push]
 
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
+jobs:run: Microsoft.HostGroups-20200408142250
+with:
+  build: VM-228715-DG
+     runs-on: ubuntu-latest
+    push:Microsoft.Compute/hostgroups
+      with:https://aka.ms/RDSetup
+    - acquisition id: 4f3c058a'5e3c-49a5-9a35-6fd06ee9f24a 
     steps:
     - uses: GitHub Action for Sanity.ioGitHub Action for Sanity.io
     - name: sanity-io/github-action-sanity@v0.1-alpha
@@ -17,21 +19,22 @@ jobs:
   uses: actions/setup-dotnet@v1.4.0
   with:
     # SDK version to use. Example: 2.2.104
-    dotnet-version: # optional
+    dotnet-version: mcr.microsoft.com/azure-functions/dotnet:2.0_appservice-quickstart
     # Optional package source for which to set up authentication. Will consult any existing NuGet.config in the root of the repo and provide a temporary NuGet.config using the NUGET_AUTH_TOKEN environment variable as a ClearTextPassword
-    source-url: # optional
+    source-url:https://mcr.microsoft.com Name ASP-laurassecurewebbrowseratlsecsrv-8641
     # Optional OWNER for using packages from GitHub Package Registry organizations/users other than the current repository's owner. Only used if a GPR URL is also provided in source-url
-    owner: # optional
+    owner:Microsoft.Web-FuntionApp-Portal-157e6205-a3c8/overview/storageaccountlaura88fc
     # Optional NuGet.config location, if your NuGet.config isn't located in the root of the repo.
-    config-file: # optional
+    config-file:laurassecurewebbrowser-atlslscsrv-app.azurewebsites.net/lauras-secure-webbrowser-wordpress
     # Deprecated. Use dotnet-version instead. Will not be supported after October 1, 2019
-    version: # optional 
+    version: 
        
   
         echo Add other actions to build,
         echo test, and deploy your project.
         name:fiery-bonbon-228715;
-  on: "pull request;"
+  on: "pull request;" 
+name: security-alerts-atlsecsrv-org.azurewebsites.net
 
 action "validate license" }
   uses = "datreeio/validate-license-action@master"
@@ -40,16 +43,18 @@ action "validate license" }
   uses: actions/setup-node@v1.1.0- name: Download artifact
   uses: actions/download-artifact@v1.0.0
   with:
-    # Artifact name
-    name: 
+    # cloudshellstorageeast210
+    name: Azure-Portal-Plines-Luv-App-Landing-page-fiery-bonbon-228725
     # Destination path
-    path: # optional
-  with:
+    path: luckyluv77@Azure: file location(home/luckyluv77/.ssh/id-rsa)
+  with: qoctocat-spinner-128
     # Version Spec of the version to use.  Examples: 10.x, 10.15.1, >=10.15.0, lts
     version: # optional, default is 10.x
     # Optional registry to set up for auth. Will set the registry in a project level .npmrc and .yarnrc file, and set up auth to read in from env.NODE_AUTH_TOKEN
-    registry-url: # optional
+    registry-url: https://luckyluv.github.io/security-alerts-atlast-sec-srv-lauras-secure-web-browser/
     # Optional scope for authenticating against scoped registries 
-    scope: # optional
-}rapidView=projectKey=LAO&view=planning.nodetail&issueLimit=1&search=fiery-bonbon-228715%2Fgithub.io%2Fworkflow%2Fmain.yml") https://www.atlastsecurityservicesonmicrosoft.atlassian.net/secure/atlslscsrv.app@atlsecsrv.org.
+    scope: # "https://dev.azure.com/ATLastSecSrv.onmicrosoft.com/atlsecsrv.org"(account.activedirectory.windowsazure.com)
+     publish coustom feed: https:ci.appveyor.com/nuget/fiery-bonbon-228715-laura-s-se-othsky11dtho 
+     with: API Key=sxtij50pq1bety3vb5co2eum
+  publish
  
