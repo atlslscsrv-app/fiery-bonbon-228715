@@ -12,27 +12,94 @@ jobs:
     - name: sanity-io/github-action-sanity@v0.1-alpha
       run: echo Hello, world!
     - name: Run a multi-line script
+      -on: 
       
-     - name: Setup .NET Core SDK
-  uses: actions/setup-dotnet@v1.4.0
+      - name: setup-docker
+  uses: docker-practice/actions-setup-docker@0.0.1
   with:
+    # Docker Version
+    docker_version: # optional, default is 19.03
+    # Docker Channel
+    docker_channel: # optional, default is stable
+      -
+       
+     - name: Setup .NET Core SDK
+           
     # SDK version to use. Example: 2.2.104
     dotnet-version: mcr.microsoft.com/azure-functions/dotnet:2.0_appservice-quickstart
     # Optional package source for which to set up authentication. Will consult any existing NuGet.config in the root of the repo and provide a temporary NuGet.config using the NUGET_AUTH_TOKEN environment variable as a ClearTextPassword
-    source-url:https://mcr.microsoft.com Name ASP-laurassecurewebbrowseratlsecsrv-8641
-    # Optional OWNER for using packages from GitHub Package Registry organizations/users other than the current repository's owner. Only used if a GPR URL is also provided in source-url
-    owner:Microsoft.Web-FuntionApp-Portal-157e6205-a3c8/overview/storageaccountlaura88fc
+   # Optional OWNER for using packages from GitHub Package Registry organizations/users other than the current repository's owner. Only used if a GPR URL is also provided in source-url
+    owner: Microsoft.Web-FuntionApp-Portal-157e6205-a3c8/overview/storageaccountlaura88fc
     # Optional NuGet.config location, if your NuGet.config isn't located in the root of the repo.
-    config-file:laurassecurewebbrowser-atlslscsrv-app.azurewebsites.net/lauras-secure-webbrowser-wordpress
+    config-file: laurassecurewebbrowser-atlslscsrv-app.azurewebsites.net/lauras-secure-webbrowser-wordpress
     # Deprecated. Use dotnet-version instead. Will not be supported after October 1, 2019
     version: 
        
   
-        echo Add other actions to build,
-        echo test, and deploy your project.
-        name:fiery-bonbon-228715;
-  on: "pull request;" 
-name: security-alerts-atlsecsrv-org.azurewebsites.net
+        echo Add other actions to build,push:
+         test: creat new repository 
+         action: "open terminal"
+         1#: $git clone__bare "https://github.com/LuckyLuv77/new-repository.git"
+         -with: "@@"
+        -run: ".LESD_LOCK?"
+        name: "ns1.mytrafficmanagement.com;cloudshellstorageeast210" 
+        push:
+        on:
+        -action/push: "com.azure.authenticator"
+          -with:
+          - name: aws-iam-authenticator installer
+  uses: prepor/action-aws-iam-authenticator@1
+  with:
+    # Version of aws-iam-authenticator
+    version: # default is 0.4.0
+           on: " {redirect URL config}"
+           Developer URL: "http://msdn.microsoft.com/en-us/library/azure/dn858223.aspx"
+            client id: is [LuckyLuv] {?LuckyLuv77?}
+            config: "app-secret-notasecret"
+            "https://fiery-bonbon-228715.firebaseapp.com/_/auth/handler" ;
+       add call back URL to Github 
+       client secret: = "notasecret" & {phone-auth=very} 'code"228715"
+      - name: Azure Login
+  uses: Azure/login@v1
+  with:
+    # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
+    creds: 
+       - name: "lauras-secure-web-browser"
+         
+         uses: Azure/webapps-deploy@v2
+  with: Azure WebApp
+    # Name of the Azure Web App
+    app-name: "laurassecurewebbrowser-atlslscsrv-app.azurewebsites.net/"
+    # Applies to Web App only: Publish profile (*.publishsettings) file contents with Web Deploy secrets
+    publish-profile: # optional
+    # Enter an existing Slot other than the Production slot
+    slot-name: # optional, default is production'
+    # Applies to Web App only: Path to package or folder. *.zip, *.war, *.jar or a folder to deploy
+    package: # optional, default is .
+    # Applies to Web App Containers only: Specify the fully qualified container image(s) name. For example, 'myregistry.azurecr.io/nginx:latest' or 'python:3.7.2-alpine/'. For multi-container scenario multiple container image names can be provided (multi-line separated)
+    images: 
+    # Applies to Web App Containers only: Path of the Docker-Compose file. Should be a fully qualified path or relative to the default working directory. Required for multi-container scenario
+    configuration-file: # optional
+    # Enter the start up command. For ex. dotnet run or dotnet run
+    startup-command: # optional
+  with:   
+  - name: Communicate on pull request merged
+  uses: guchaocharlie/comment-pr@v1
+  with:
+    # Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}
+    github-token: 
+    # A comment to post on a pull request when code changes are merged
+    comment: 
+         powershell: Diagnostic Storage Account
+          
+       "cloud-shell-storage-eastus-vnet"
+  uses: rohit-gohri/deploy-action@v0.1.0  
+       webhook: "https://$security-alerts-atlsecsrv-org=bt15JcdhlDbhL9TGywva40ZMfEceWuovzoJbppnXbu17tJXtg15mfDiMtYci@security-alerts-atlsecsrv-org.scmazurewebsites.net/dockerhook"
+        
+        project: fiery-bonbon-228715;
+        
+  on: "pull request 
+  " https://mcr.microsoft.com Name ASP-laurassecurewebbrowseratlsecsrv-8641
 
 action "validate license" }
   uses = "datreeio/validate-license-action@master"
